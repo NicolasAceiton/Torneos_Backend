@@ -37,8 +37,6 @@ class JugadorSerializer(serializers.ModelSerializer):
         }
 
     def validate(self, attrs):
-        # En un PATCH pueden faltar campos: usamos lo enviado
-        # y, si no viene, lo que ya está guardado.
         equipo = attrs.get("equipo", getattr(self.instance, "equipo", None))
         numero = attrs.get("numero_camiseta", getattr(self.instance, "numero_camiseta", None))
 
