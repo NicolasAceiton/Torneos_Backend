@@ -7,13 +7,11 @@ from .models import Liga, Equipo, Jugador, Partido
 class TorneosAPITest(APITestCase):
 
     def setUp(self):
-        # Crear una liga para utilizar en las pruebas
         self.liga = Liga.objects.create(
             nombre="Liga de Asenso de Chile",
             pais="Chile"
         )
 
-        # Crear dos equipos
         self.equipo1 = Equipo.objects.create(
             nombre="Deportes Temuco",
             liga=self.liga
