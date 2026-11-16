@@ -24,7 +24,6 @@ torneos-backend/
 │   ├── urls.py        # Rutas de la API (router)
 │   ├── admin.py       # Registro de modelos en el panel de administración
 │   └── tests.py       # Pruebas automáticas
-├── docs/              # Documentación de endpoints y evidencia de pruebas
 ├── manage.py
 ├── requirements.txt
 ├── README.md
