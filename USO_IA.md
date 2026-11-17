@@ -28,7 +28,6 @@ Definimos los modelos con sus entidades, el settings, tambien algunos modelos de
 
 ## 3. ¿Qué errores o problemas encontramos en las respuestas generadas por IA?
 
-[Ejemplos reales que nos ocurrieron. Conserven los que sean ciertos para ustedes y agreguen otros:]
 
 - Fallo con los Models y Serializers= Los serializers que escribimos primero usaban nombres como `numero` y `fecha_hora`, pero nuestros modelos usaban `numero_camiseta` y `fecha`, por lo cual la api habia fallado, tuvimos que verificar y arreglarlo.
 - Falta de Archivo= El comando `startapp` no crea `urls.py` por lo cual tuvimos que buscar por que no funcionaba el servidor.
